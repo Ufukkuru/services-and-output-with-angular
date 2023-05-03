@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'states';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+add(event: string) {
+this.todos.push(event)
+}
+  todos:string[] = []
 }
